@@ -4,8 +4,12 @@ body, * {
 }
 
 .home {
-  height: 100vh;
   overflow: hidden;
+}
+@media (min-width: 961px) {
+  .home {
+    height: 100vh;
+  }
 }
 .home .bg {
   height: 100vh;
@@ -15,6 +19,11 @@ body, * {
   text-align: center;
   align-content: center;
   display: flex;
+}
+@media (max-width: 960px) {
+  .home .bg {
+    max-height: 600px;
+  }
 }
 .home .bg.bg-atHome {
   background: url(../images/faemina-consumer-orizzontale.jpg);
@@ -53,12 +62,28 @@ body, * {
   position: relative;
   z-index: 2;
 }
+@media (max-width: 767px) {
+  .home .bg .text-wrap {
+    max-width: inherit;
+    margin: auto 50px;
+  }
+}
 .home .bg .text-wrap .h1 {
   font-size: 80px;
   font-weight: bold;
 }
+@media (max-width: 767px) {
+  .home .bg .text-wrap .h1 {
+    font-size: 40px;
+  }
+}
 .home .bg .text-wrap p {
   font-size: 20px;
+}
+@media (max-width: 767px) {
+  .home .bg .text-wrap p {
+    font-size: 16px;
+  }
 }
 .home .bg .text-wrap .btn.btn-secondary {
   padding: 15px 20px;
@@ -68,6 +93,11 @@ body, * {
   background: transparent;
   border-radius: 0;
   min-width: 120px;
+  transition: 0.3s;
+}
+.home .bg .text-wrap .btn.btn-secondary:hover {
+  background: #fff;
+  color: #000;
 }
 .home .bg:hover img {
   transform: scale(3);
