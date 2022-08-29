@@ -23,6 +23,7 @@ body, * {
 @media (max-width: 960px) {
   .home .bg {
     max-height: 600px;
+    padding: 30px;
   }
 }
 .home .bg.bg-atHome {
@@ -65,7 +66,7 @@ body, * {
 @media (max-width: 767px) {
   .home .bg .text-wrap {
     max-width: inherit;
-    margin: auto 50px;
+    margin: auto;
   }
 }
 .home .bg .text-wrap .h1 {
