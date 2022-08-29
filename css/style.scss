@@ -17,6 +17,7 @@ body, * {
 		display: flex;
 		@media (max-width:960px) {
 			max-height: 600px;
+			padding: 30px;
 		}
 		&.bg-atHome{
 			background: url(../images/faemina-consumer-orizzontale.jpg);
@@ -57,7 +58,7 @@ body, * {
 			z-index: 2;
 			@media (max-width:767px) {
 				max-width: inherit;
-				margin: auto 50px;
+				margin: auto;
 			}
 			.h1{
 				font-size: 80px;
